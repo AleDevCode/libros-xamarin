@@ -1,0 +1,15 @@
+C:\Users\aleja\source\repos\Libros\Libros\Libros\bin\Debug\netstandard2.0\Libros.deps.json
+C:\Users\aleja\source\repos\Libros\Libros\Libros\bin\Debug\netstandard2.0\Libros.dll
+C:\Users\aleja\source\repos\Libros\Libros\Libros\bin\Debug\netstandard2.0\ref\Libros.dll
+C:\Users\aleja\source\repos\Libros\Libros\Libros\bin\Debug\netstandard2.0\Libros.pdb
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\Libros.csprojAssemblyReference.cache
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\Libros.AssemblyInfoInputs.cache
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\Libros.AssemblyInfo.cs
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\Libros.dll
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\ref\Libros.dll
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\Libros.pdb
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\Libros.csproj.CoreCompileInputs.cache
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\AddLibro.xaml.g.cs

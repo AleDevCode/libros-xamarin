@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Libros.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar" Clicked="OnAddTarea" />
+        <ToolbarItem Text="Actualizar" Clicked="OnRefresh"/>
+    </ContentPage.ToolbarItems>
+
+    <ListView ItemsSource="{Binding}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Titulo}" Detail="{Binding Descripcion}">
+                    <TextCell.ContextActions>
+                        <MenuItem CommandParameter="{Binding}" Text="Eliminar" IsDestructive="True" Clicked="OnDeleteLibro" />
+                    </TextCell.ContextActions>
+                </TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
