@@ -4,17 +4,18 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="Libros"
              x:Class="Libros.MainPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Agregar" Clicked="OnAddTarea" />
-        <ToolbarItem Text="Actualizar" Clicked="OnRefresh"/>
+        <ToolbarItem Text="Agregar" Clicked="OnAddTarea"/>
+        <!--<ToolbarItem Text="Actualizar" Clicked="OnRefresh"/>-->
     </ContentPage.ToolbarItems>
 
-    <ListView ItemsSource="{Binding}">
+    <ListView ItemsSource="{Binding}" IsPullToRefreshEnabled="True" x:Name="lista" RowHeight="60">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Titulo}" Detail="{Binding Descripcion}">
+                <TextCell Text="{Binding Titulo}" Detail="{Binding Descripcion}" TextColor="Black">
                     <TextCell.ContextActions>
                         <MenuItem CommandParameter="{Binding}" Text="Eliminar" IsDestructive="True" Clicked="OnDeleteLibro" />
                         <MenuItem CommandParameter="{Binding}" Text="Editar" IsDestructive="True" Clicked="OnUpdateLibro" />
@@ -23,5 +24,4 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
 </ContentPage>

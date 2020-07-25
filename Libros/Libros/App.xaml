@@ -6,6 +6,6 @@
              mc:Ignorable="d"
              x:Class="Libros.App">
     <Application.Resources>
-
+        <Color x:Key="NavigationBarColor">#000000</Color>
     </Application.Resources>
 </Application>

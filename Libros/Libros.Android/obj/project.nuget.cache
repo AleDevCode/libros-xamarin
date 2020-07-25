@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "S5Pbr7vHaCIPhg4FyqbQYxZU/lbP2tfQ3xOpA/dGlZd7VuHTLt30BaofGSw8sUYzpmmrij/Xra/JAmEyLRGtaA==",
+  "dgSpecHash": "mzQ5IUJO6BhhZ8vvGXfS1aAKMAngJ6cM0f+GOgjFcoaq6RuQlUpmtUNgzkkg0A3p+iyLgC1dSh1eUEwUjq4mDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros.Android\\Libros.Android.csproj",
+  "projectFilePath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros.Android\\Libros.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\aleja\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\aleja\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\luise\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\luise\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.lifecycle.common\\1.1.1.3\\xamarin.android.arch.lifecycle.common.1.1.1.3.nupkg.sha512",

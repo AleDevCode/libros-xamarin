@@ -21,10 +21,16 @@ namespace Libros
 
         public MainPage()
         {
-            BindingContext = libros; 
+            BindingContext = libros;
 
             InitializeComponent();
+
             GetData();
+
+            lista.RefreshCommand = new Command(() => {
+                lista.IsRefreshing = true;
+                GetData(); // Here I loaded some items in my ListView
+            });
         }
 
         public void OnRefresh(object sender, EventArgs e)
@@ -63,13 +69,16 @@ namespace Libros
         async public void GetData()
         {
             var librosCollection = await manager.GetAll();
+            libros.Clear();
             foreach (Libro libro in librosCollection)
             {
                 if (libros.All(l => l.Id != libro.Id))
                 {
-                    libros.Add(libro);
-                }
+                    libros.Add(libro); 
+                } 
             }
+
+            lista.IsRefreshing = false;
         }
     }
 }

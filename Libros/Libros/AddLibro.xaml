@@ -4,12 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="Agregar libro"
              x:Class="Libros.AddLibro">
     <ContentPage.Content>
         <StackLayout Spacing="20">
             <Label Text="Libro" FontSize="Title" />
             <Entry x:Name="txtTitulo" Placeholder="Titulo" />
-            <Entry x:Name="txtDescripcion" Placeholder="Detalle" />
+            <Entry x:Name="txtDescripcion" Placeholder="Descripción" />
             <Entry x:Name="txtAutor" Placeholder="Autor" />
             <Entry x:Name="txtGenero" Placeholder="Genero" />
             <Button x:Name="btnGuardar" Text="Guardar" Clicked="OnSaveTarea"/>

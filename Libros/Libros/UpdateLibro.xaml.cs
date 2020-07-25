@@ -15,6 +15,7 @@ namespace Libros
     {
         private LibroManager manager;
         private Libro libro;
+        public String Titulo;
 
         public UpdateLibro(LibroManager manager, Libro libro = null)
         {

@@ -59,7 +59,7 @@ router.put('/:idLibro', async function (req, res) {
         const { idLibro } = req.params;
         const { Titulo, Descripcion, Autor, Genero } = req.body;
 
-        let libro = await Libro.update(
+        let libroA = await Libro.update(
             {
                 titulo: Titulo,
                 descripcion: Descripcion,
@@ -71,7 +71,10 @@ router.put('/:idLibro', async function (req, res) {
             }
         );
 
-        res.json(libro);
+        if (libroA.length > 0) {
+            let libro = await Libro.findOne({ where: { id: idLibro } });
+            res.json(libro);
+        }
 
     } catch (e) {
         res.send(e);

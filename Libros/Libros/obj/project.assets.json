@@ -645,23 +645,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aleja\\.nuget\\packages\\": {},
+    "C:\\Users\\luise\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros\\Libros.csproj",
+      "projectUniqueName": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros\\Libros.csproj",
       "projectName": "Libros",
-      "projectPath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros\\Libros.csproj",
-      "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros\\obj\\",
+      "projectPath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros\\Libros.csproj",
+      "packagesPath": "C:\\Users\\luise\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luise\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -715,7 +715,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
