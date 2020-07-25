@@ -24,6 +24,7 @@ namespace Libros
             BindingContext = libros; 
 
             InitializeComponent();
+            GetData();
         }
 
         public void OnRefresh(object sender, EventArgs e)
@@ -48,6 +49,17 @@ namespace Libros
             GetData();
         }
 
+        private void OnUpdateLibro(object sender, EventArgs e)
+        {
+            MenuItem menuItem = sender as MenuItem;
+
+            var l = menuItem.CommandParameter as Libro;
+
+            if (l != null)
+            {
+                Navigation.PushAsync(new UpdateLibro(manager, l));
+            }
+        }
         async public void GetData()
         {
             var librosCollection = await manager.GetAll();

@@ -13,3 +13,4 @@ C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\Libros
 C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\Libros.csproj.CoreCompileInputs.cache
 C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\AddLibro.xaml.g.cs
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\UpdateLibro.xaml.g.cs

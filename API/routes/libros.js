@@ -71,7 +71,7 @@ router.put('/:idLibro', async function (req, res) {
             }
         );
 
-        return res.json(libro);
+        res.json(libro);
 
     } catch (e) {
         res.send(e);

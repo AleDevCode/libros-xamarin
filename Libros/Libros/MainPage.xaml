@@ -17,6 +17,7 @@
                 <TextCell Text="{Binding Titulo}" Detail="{Binding Descripcion}">
                     <TextCell.ContextActions>
                         <MenuItem CommandParameter="{Binding}" Text="Eliminar" IsDestructive="True" Clicked="OnDeleteLibro" />
+                        <MenuItem CommandParameter="{Binding}" Text="Editar" IsDestructive="True" Clicked="OnUpdateLibro" />
                     </TextCell.ContextActions>
                 </TextCell>
             </DataTemplate>

@@ -11,7 +11,7 @@ namespace Libros.Data
     {
         // OJO: Importante actualizar la dirección IP por la tuya, igualmente el puerto en caso de que lo cambies
         // Igualemente agregar tu IP en Android/Resources/xml/network_security_config.xml
-        const string url = "http://192.168.0.8:3000/libros/";
+        const string url = "http://192.168.0.10:3000/libros/";
 
         public async Task<IEnumerable<Libro>> GetAll()
         {
@@ -32,6 +32,28 @@ namespace Libros.Data
 
             HttpClient client = new HttpClient();
             var response = await client.PostAsync(url,
+                new StringContent(
+                    JsonConvert.SerializeObject(libro),
+                    Encoding.UTF8, "application/json"));
+
+            return JsonConvert.DeserializeObject<Libro>(
+                await response.Content.ReadAsStringAsync());
+
+        }
+
+
+        public async Task<Libro> Update(long id, string titulo, string descripcion, string autor, string genero)
+        {
+            Libro libro = new Libro()
+            {
+                Titulo = titulo,
+                Descripcion = descripcion,
+                Autor = autor,
+                Genero = genero
+            };
+
+            HttpClient client = new HttpClient();
+            var response = await client.PutAsync($"{url}/{id}",
                 new StringContent(
                     JsonConvert.SerializeObject(libro),
                     Encoding.UTF8, "application/json"));
