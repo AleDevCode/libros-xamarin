@@ -25,14 +25,19 @@ namespace Libros
             this.manager = manager;
         }
 
-        async public void OnSaveTarea(object sender, EventArgs e)
+        async public void OnSaveLibro(object sender, EventArgs e)
         {
             if (txtTitulo.Text.Length > 0 && txtDescripcion.Text.Length > 0 && txtAutor.Text.Length > 0 && txtGenero.Text.Length > 0)
             {
                 await manager.Add(txtTitulo.Text, txtDescripcion.Text, txtAutor.Text, txtGenero.Text);
+                OnBackHome();
             }
         }
 
+        async private void OnBackHome()
+        {
+            await Navigation.PopToRootAsync();
+        }
 
 
 

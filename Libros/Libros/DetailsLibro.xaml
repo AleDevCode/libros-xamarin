@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Libros.DetailsLibro">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Detalles del libro" HorizontalOptions="Center" FontSize="Title"></Label>
+
+            <Label Text="Título" FontSize="Medium"></Label>
+            <Label x:Name="libroTituloLabel"/>
+
+            <Label Text="Descripción" FontSize="Medium"></Label>
+            <Label x:Name="libroDescripcionLabel"/>
+
+            <Label Text="Autor" FontSize="Medium"></Label>
+            <Label x:Name="libroAutorLabel"/>
+
+            <Label Text="Género" FontSize="Medium"></Label>
+            <Label x:Name="libroGeneroLabel"/>
+
+            <Button Text="Volver" HorizontalOptions="Fill" Clicked="OnBackHome" BackgroundColor="LightBlue"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

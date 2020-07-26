@@ -30,3 +30,4 @@ C:\Users\luise\Source\Repos\libros-xamarin\Libros\Libros\obj\Debug\netstandard2.
 C:\Users\luise\Source\Repos\libros-xamarin\Libros\Libros\obj\Debug\netstandard2.0\Libros.dll
 C:\Users\luise\Source\Repos\libros-xamarin\Libros\Libros\obj\Debug\netstandard2.0\ref\Libros.dll
 C:\Users\luise\Source\Repos\libros-xamarin\Libros\Libros\obj\Debug\netstandard2.0\Libros.pdb
+C:\Users\aleja\source\repos\Libros\Libros\Libros\obj\Debug\netstandard2.0\DetailsLibro.xaml.g.cs

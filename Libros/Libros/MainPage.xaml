@@ -12,7 +12,7 @@
         <!--<ToolbarItem Text="Actualizar" Clicked="OnRefresh"/>-->
     </ContentPage.ToolbarItems>
 
-    <ListView ItemsSource="{Binding}" IsPullToRefreshEnabled="True" x:Name="lista" RowHeight="60">
+    <ListView ItemsSource="{Binding}" IsPullToRefreshEnabled="True" x:Name="lista" RowHeight="60" ItemTapped="OnItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Titulo}" Detail="{Binding Descripcion}" TextColor="Black">

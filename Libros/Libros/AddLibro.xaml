@@ -24,7 +24,7 @@
             <Entry x:Name="txtDescripcion" Placeholder="Descripción" Text="" />
             <Entry x:Name="txtAutor" Placeholder="Autor" Text="" />
             <Entry x:Name="txtGenero" Placeholder="Genero" Text="" />
-            <Button x:Name="btnGuardar" Text="Guardar" Clicked="OnSaveTarea" IsEnabled="false">
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="OnSaveLibro" IsEnabled="false">
                 <Button.Triggers>
                     <MultiTrigger TargetType="Button">
                         <MultiTrigger.Conditions>

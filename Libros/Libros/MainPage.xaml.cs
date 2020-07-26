@@ -27,6 +27,8 @@ namespace Libros
 
             GetData();
 
+            lista.ItemsSource = libros;
+
             lista.RefreshCommand = new Command(() => {
                 lista.IsRefreshing = true;
                 GetData(); // Here I loaded some items in my ListView
@@ -50,9 +52,15 @@ namespace Libros
 
             var l = menuItem.CommandParameter as Libro;
 
-            await manager.Delete(l.Id);
-            libros.Remove(l);
-            GetData();
+            bool answer = await DisplayAlert("Alerta", $"¿Está seguro de eliminar el libro {l.Titulo}?", "Sí", "No");
+
+            if (answer)
+            {
+                await manager.Delete(l.Id);
+                libros.Remove(l);
+                GetData();
+            }
+
         }
 
         private void OnUpdateLibro(object sender, EventArgs e)
@@ -79,6 +87,21 @@ namespace Libros
             }
 
             lista.IsRefreshing = false;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            GetData();
+        }
+
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (lista.SelectedItem != null)
+            {
+                var detailPage = new DetailsLibro(lista.SelectedItem as Libro);
+                await Navigation.PushModalAsync(detailPage);
+            }
         }
     }
 }

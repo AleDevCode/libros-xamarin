@@ -41,7 +41,13 @@ namespace Libros
             if (txtTitulo.Text.Length > 0 && txtDescripcion.Text.Length > 0 && txtAutor.Text.Length > 0 && txtGenero.Text.Length > 0)
             {
                 await manager.Update(this.libro.Id ,txtTitulo.Text, txtDescripcion.Text, txtAutor.Text, txtGenero.Text);
+                OnBackHome();
             }
+        }
+
+        async private void OnBackHome()
+        {
+            await Navigation.PopToRootAsync();
         }
     }
 
