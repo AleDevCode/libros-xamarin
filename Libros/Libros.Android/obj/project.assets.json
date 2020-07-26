@@ -2010,24 +2010,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luise\\.nuget\\packages\\": {},
+    "C:\\Users\\aleja\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros.Android\\Libros.Android.csproj",
+      "projectUniqueName": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros.Android\\Libros.Android.csproj",
       "projectName": "Libros.Android",
-      "projectPath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros.Android\\Libros.Android.csproj",
-      "packagesPath": "C:\\Users\\luise\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros.Android\\obj\\",
+      "projectPath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros.Android\\Libros.Android.csproj",
+      "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\luise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2041,8 +2041,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros\\Libros.csproj": {
-              "projectPath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros\\Libros.csproj"
+            "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros\\Libros.csproj": {
+              "projectPath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros\\Libros.csproj"
             }
           }
         }

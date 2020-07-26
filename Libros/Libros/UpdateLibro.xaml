@@ -3,9 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Libros;assembly=Libros"
              mc:Ignorable="d"
              Title="Editar libro"
              x:Class="Libros.UpdateLibro">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:MultiTriggerConverter x:Key="dataHasBeenEntered" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Libro" FontSize="Title" />
@@ -13,7 +20,31 @@
             <Entry x:Name="txtDescripcion" Placeholder="Descripción" />
             <Entry x:Name="txtAutor" Placeholder="Autor" />
             <Entry x:Name="txtGenero" Placeholder="Genero" />
-            <Button x:Name="btnGuardar" Text="Actualizar" Clicked="OnUpdateLibro" />
+            <Button x:Name="btnGuardar" Text="Actualizar" Clicked="OnUpdateLibro" IsEnabled="False" >
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference txtTitulo},
+                              Path=Text.Length,
+                              Converter={StaticResource dataHasBeenEntered}}"
+                          Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference txtDescripcion},
+                              Path=Text.Length,
+                              Converter={StaticResource dataHasBeenEntered}}"
+                          Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference txtAutor},
+                             Path=Text.Length,
+                              Converter={StaticResource dataHasBeenEntered}}"
+                          Value="true" />
+                            <BindingCondition Binding="{Binding Source={x:Reference txtGenero},
+                              Path=Text.Length,
+                              Converter={StaticResource dataHasBeenEntered}}"
+                          Value="true" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="True" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

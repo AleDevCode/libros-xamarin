@@ -1116,24 +1116,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luise\\.nuget\\packages\\": {},
+    "C:\\Users\\aleja\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros.iOS\\Libros.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros.iOS\\Libros.iOS.csproj",
       "projectName": "Libros.iOS",
-      "projectPath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros.iOS\\Libros.iOS.csproj",
-      "packagesPath": "C:\\Users\\luise\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros.iOS\\obj\\",
+      "projectPath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros.iOS\\Libros.iOS.csproj",
+      "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\luise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1147,8 +1147,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros\\Libros.csproj": {
-              "projectPath": "C:\\Users\\luise\\Source\\Repos\\libros-xamarin\\Libros\\Libros\\Libros.csproj"
+            "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros\\Libros.csproj": {
+              "projectPath": "C:\\Users\\aleja\\source\\repos\\Libros\\Libros\\Libros\\Libros.csproj"
             }
           }
         }

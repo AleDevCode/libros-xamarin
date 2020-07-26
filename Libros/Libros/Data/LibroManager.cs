@@ -12,7 +12,7 @@ namespace Libros.Data
     {
         // OJO: Importante actualizar la dirección IP por la tuya, igualmente el puerto en caso de que lo cambies
         // Igualemente agregar tu IP en Android/Resources/xml/network_security_config.xml
-        const string url = "http://192.168.100.13:3000/libros/";
+        const string url = "http://192.168.0.10:3000/libros/";
 
         public async Task<IEnumerable<Libro>> GetAll()
         {
